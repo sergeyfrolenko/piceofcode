@@ -1,0 +1,33 @@
+{
+  "name": "piceofcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp & node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergeyfrolenko/piceofcode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sergeyfrolenko/piceofcode/issues"
+  },
+  "homepage": "https://github.com/sergeyfrolenko/piceofcode#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-plumber": "^1.2.1",
+    "gulp-prettier": "^3.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglifyjs": "^0.6.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
