@@ -1,1 +1,7 @@
-@import 'pure';
+@import 'normalize';
+@import 'layout';
+
+body {
+  padding: 0;
+  margin: 0;
+}

@@ -1,0 +1,68 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <title>Piece of code</title>
+</head>
+
+<body>
+<h1><a href="/index.html">PieceOfCode</a></h1>
+
+<div class="container">
+  <h3>Block model</h3>
+  <ul>
+    <li><a href="#box">box</a></li>
+    <li><a href="#advance-property">advance property</a></li>
+    <li><a href="#margin">margin</a></li>
+    <li><a href="#width-height">width height</a></li>
+  </ul>
+
+  <section id="box">
+    <h4>Box</h4>
+    <img src="img/box.png" alt="box model" width="400px">
+  </section>
+
+  <section id="advance-property">
+    <h4>Advance property</h4>
+    <p>
+      background-clip: padding-box; /* Фон внутри рамки */
+    </p>
+    <p>
+      outline: 2px solid #c52b1c; /* Параметры красной рамки */ <br>
+      outline-offset: 3px; /* Смещение красной рамки */
+    </p>
+  </section>
+
+  <section id="margin">
+    <h4>Margin</h4>
+    <p>
+      По вертикали проценты считаются от ширины всего блока. <br>
+      Выравнивание блока по центру через значение auto работает только в сочетании с width.
+    </p>
+    <p>
+      Вертикальные margin у соседних элементов объединяются между собой, выбирается большее значение из двух. <br>
+      Для margin слева и справа схлопывание никогда не применяется. <br>
+      Если один из margin отрицательный, то в этом случае происходит их складывание по правилам математики. <br>
+      Если оба margin отрицательные, то из двух значений выбирается наибольшее по модулю, оно же и выступает в качестве
+      отрицательного отступа между элементами.
+    </p>
+  </section>
+
+  <section id="width-height">
+    <h4>Width and height</h4>
+    <p>
+      width+padding+border+margin, for height similarly <br>
+      overflow: auto; /* Добавляем полосы прокрутки */
+    </p>
+    <p>
+      Свойство box-sizing может принимать одно из двух значений – border-box или content-box <br>
+      content-box - Это значение по умолчанию. В этом случае свойства width/height обозначают то, что находится внутри
+      padding <br>
+      border-box - Значения width/height задают высоту/ширину всего элемента.
+    </p>
+    <p>
+      padding высота в процентах расчитывается из ширины блока
+    </p>
+  </section>
+
+</div>
