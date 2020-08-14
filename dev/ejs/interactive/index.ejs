@@ -8,6 +8,16 @@
   .cyan {
     background-color: cyan;
   }
+
+  footer {
+    margin-top: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: indigo;
+    color: khaki;
+  }
 </style>
 <div class="container">
   <script src="https://unpkg.com/vue"></script>
@@ -44,7 +54,16 @@
 
     <p>{{ message | lowercase() }}</p>
     <input type="text" v-on:input="message = $event.target.value">
+    <hr>
+
+    <app-fitneses></app-fitneses>
   </div>
+
+  <footer>
+    <p>
+      SF &copy; 2020
+    </p>
+  </footer>
 
   <script src="/javascripts/script.js"></script>
 </div>

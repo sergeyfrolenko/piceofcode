@@ -1,4 +1,4 @@
-Vue.component(app - fitneses, {
+Vue.component("app-fitneses", {
   data: function () {
     return {
       fitneses: [
@@ -9,7 +9,7 @@ Vue.component(app - fitneses, {
     }
   },
   template: '<div><div class="fitnes" v-for="fitnes in fitneses"><p>{{fitnes.name}}</p></div></div>'
-})
+});
 
 new Vue({
   el: '#app',

@@ -1,3 +1,16 @@
+Vue.component("app-fitneses", {
+  data: function () {
+    return {
+      fitneses: [
+        { name: "Alex" },
+        { name: "Onyx" },
+        { name: "Lime" }
+      ]
+    }
+  },
+  template: '<div><div class="fitnes" v-for="fitnes in fitneses"><p>{{fitnes.name}}</p></div></div>'
+});
+
 new Vue({
   el: '#app',
   data: {
