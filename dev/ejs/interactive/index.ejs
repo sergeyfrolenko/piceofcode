@@ -1,69 +1,13 @@
 <%- include('../piece/head'); %>
 <%- include('../piece/header'); %>
-<style>
-  .coral {
-    background-color: coral;
-  }
 
-  .cyan {
-    background-color: cyan;
-  }
-
-  footer {
-    margin-top: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: indigo;
-    color: khaki;
-  }
-</style>
 <div class="container">
-  <script src="https://unpkg.com/vue"></script>
   <h3>Interactive</h3>
 
-  <div id="app">
-    <p>{{ title }}</p>
-    <button v-on:click="info.text='v-on derective'">show info</button>
-    <button @mouseover="info.text='dog'">show info</button>
-    <p>{{ info.text }}</p>
-    <hr>
+  <ul>
+    <li><a href="interactive-vue-dudar.html">interactive vue by Dudar</a></li>
+    <li><a href="interactive-vue-minin.html">interactive vue by Minin</a></li>
+  </ul>
 
-    <p>{{ info.count }}</p>
-    <button @click="count">add</button>
-    <hr>
 
-    <p v-bind:class="color">color {{ color }}</p>
-    <input type="text" v-on:input="color = $event.target.value">
-    <hr>
-
-    <p>value {{ value }}</p>
-    <p>double value {{ double }}</p>
-    <input type="text" v-on:input="count($event.target.value)">
-    <hr>
-
-    <button @click="show = !show">show / hide</button>
-    <p v-if="show">text</p>
-    <hr>
-
-    <ul>
-      <li v-for="(car, i) in cars">{{ i+1 }}. model - {{ car.model }}, speed - {{ car.speed }}</li>
-    </ul>
-    <hr>
-
-    <p>{{ message | lowercase() }}</p>
-    <input type="text" v-on:input="message = $event.target.value">
-    <hr>
-
-    <app-fitneses></app-fitneses>
-  </div>
-
-  <footer>
-    <p>
-      SF &copy; 2020
-    </p>
-  </footer>
-
-  <script src="/javascripts/script.js"></script>
 </div>
