@@ -38,6 +38,6 @@ gulp.task("ejs", (done) => {
 });
 gulp.watch("dev/scss/**/*.scss", gulp.series("sass"));
 gulp.watch("dev/js/*.js", gulp.series("js"));
-gulp.watch("dev/ejs/*.ejs", gulp.series("ejs"));
+gulp.watch("dev/ejs/*/*.ejs", gulp.series("ejs"));
 
 gulp.task("default", gulp.series("sass", "js", "ejs"));
