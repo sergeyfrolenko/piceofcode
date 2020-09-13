@@ -1,11 +1,12 @@
 const gulp = require("gulp");
 const sass = require("gulp-sass");
 const ejs = require("gulp-ejs");
+const rename = require('gulp-rename');
 // const cssnano = require("gulp-cssnano");
 const concat = require("gulp-concat");
 // const uglify = require("gulp-uglifyjs");
 const plumber = require("gulp-plumber");
-const prettier = require("gulp-prettier");
+//const prettier = require("gulp-prettier");
 gulp.task("sass", function (done) {
   gulp
     .src("dev/**/*.scss")
@@ -30,8 +31,9 @@ gulp.task("ejs", (done) => {
   gulp
     .src("dev/ejs/*.ejs")
     .pipe(ejs())
-    .pipe(prettier())
-    .pipe(gulp.dest("dest"));
+    .pipe(rename({ extname: '.html' }))
+    //.pipe(prettier())
+    .pipe(gulp.dest("./dest"));
   done();
 });
 gulp.watch("dev/scss/**/*.scss", gulp.series("sass"));
